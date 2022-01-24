@@ -17,4 +17,5 @@
 
 ## Exploratory Data Analysis(EDA)
 ### Data Visualization
-![i1.png](i1.png)
+![i1.png](i1.png) ![i2.png](i2.png)   
+![i3.png](i3.png) ![i4.png](i4.png)  
