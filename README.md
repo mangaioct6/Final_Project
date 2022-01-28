@@ -13,7 +13,7 @@
 
 ## Objective of this project
 
-* **My goal is to reduce the number of customers leaving the phone service**. We need to understand better the situation, which customers are likely to leave and why. Once it is clear what features are impacting customer churn, then we can start create Machine Learning Models.
+* **My goal is to predict the number of customers leaving the phone service**. We need to understand better the situation, which customers are likely to leave and why. Once it is clear what features are impacting customer churn, then we can start create Machine Learning Models.
 
 ## Exploratory Data Analysis(EDA)
 ### Data Visualization
