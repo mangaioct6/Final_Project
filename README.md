@@ -1,3 +1,18 @@
+# Table Of Contents
+1. About Dataset
+2. Objective of this project
+3. Exploratory Data Analysis(EDA)
+   3a. Data Visualization
+   
+
+
+
+
+
+
+
+
+
 ## About Dataset
 * This is a Telco-Customer-Churn dataset, I took this csv file from kaggle. Each row represents a customer, each column contains customer’s attributes described on the column Metadata.
 
@@ -17,5 +32,7 @@
 
 ## Exploratory Data Analysis(EDA)
 ### Data Visualization
-![i1.png](i1.png) ![i2.png](i2.png)   
-![i3.png](i3.png) ![i4.png](i4.png)  
+![i1.png](i1.png) ![i2.png](i2.png)  ![i3.png](i3.png) ![i4.png](i4.png)  
+
+### Preprocessing
+
