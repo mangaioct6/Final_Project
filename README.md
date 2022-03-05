@@ -39,3 +39,27 @@
    * Encoded 18 categorical columns
    * Standardized 3 columns(tenure, MonthlyCharges, TotalCharges)
    * Checked for outliers
+
+### It is an imbalanced Dataset
+![imbalance.png](imbalance.png)
+
+![smote.png](smote.png)
+
+### Discussions from Correlation Heat Map
+* The correlation goes from + 1 to - 1 where 1 is total positive linear correlation 0 is no linear correlation and negative 1 is total negative linear correlation.
+
+* From color bar,
+
+   * Yellows are negative correlations,
+
+   * Darker the yellow, stronger negative correlation
+
+   * Middle section where the colors are real light blue where there's not much correlation at all
+
+   * the Dark blues are positive correlation and
+
+   * the darker the blue the stronger positive correlation
+
+   * Churn is highly correlated(positive correlation)with tenure,InternetService_Fiber optic, Contract_Month-to-month, Contract_Two year, PaymentMethod_Electronic check.
+
+   * Churn is strongly correlated with itself.
