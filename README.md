@@ -1,3 +1,18 @@
+# Table Of Contents
+1. About Dataset
+2. Objective of this project
+3. Exploratory Data Analysis(EDA)
+   3a. Data Visualization
+   
+
+
+
+
+
+
+
+
+
 ## About Dataset
 * This is a Telco-Customer-Churn dataset, I took this csv file from kaggle. Each row represents a customer, each column contains customer’s attributes described on the column Metadata.
 
@@ -13,4 +28,14 @@
 
 ## Objective of this project
 
-* **My goal is to reduce the number of customers leaving the phone service**. We need to understand better the situation, which customers are likely to leave and why. Once it is clear what features are impacting customer churn, then we can start create Machine Learning Models.
+* **My goal is to predict the number of customers leaving the phone service**. We need to understand better the situation, which customers are likely to leave and why. Once it is clear what features are impacting customer churn, then we can start create Machine Learning Models.
+
+## Exploratory Data Analysis(EDA)
+### Data Visualization
+![i1.png](i1.png) ![i2.png](i2.png)  ![i3.png](i3.png) ![i4.png](i4.png)  
+
+### Preprocessing
+   * There are no null values in this dataset.
+   * Encoded 18 categorical columns
+   * Standardized 3 columns(tenure, MonthlyCharges, TotalCharges)
+   * Checked for outliers
