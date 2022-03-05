@@ -35,4 +35,7 @@
 ![i1.png](i1.png) ![i2.png](i2.png)  ![i3.png](i3.png) ![i4.png](i4.png)  
 
 ### Preprocessing
-
+   * There are no null values in this dataset.
+   * Encoded 18 categorical columns
+   * Standardized 3 columns(tenure, MonthlyCharges, TotalCharges)
+   * Checked for outliers
