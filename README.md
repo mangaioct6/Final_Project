@@ -9,14 +9,13 @@
       * 3d.Correlation Heat Map
       * 3e.Checked for outliers
 4. ETL
-      * Stored the data in a database and used ETL to get it there. Created a data model. 
-       ![datamodel.PNG](datamodel.PNG)
-      * ETL code is in Final_ETL jupyter notebook
 5. Model Selection
       * 5a. Logistic Regression
       * 5b. Support Vector Machines
       * 5c. RandomForestClassifier(Bagging technique)
       * 5d. XGBoost Classifier(Boosting technique)
+6. Hyper parameter tuning
+7. Result Interpretation
 
 
 
@@ -80,6 +79,10 @@
 ### 3e.Checked for outliers
 ![outliers.png](outliers.png)
 * Boxplot clearly shows that there are no outliers in the data.
+## 4. ETL
+   * Stored the data in a database and used ETL to get it there. Created a data model. 
+    ![datamodel.PNG](datamodel.PNG)
+   * ETL code is in Final_ETL jupyter notebook
 
 ## 5. Model Selection
    * I used PCA(Principal Component Analysis) Dimensionality reduction technique to give an efficient inputs to my models. I gave a brief explanation about the models I chose.
@@ -100,3 +103,10 @@ Since it predicts probability, the output values lies between 0 and 1(probabilit
 ### 5d. XGBoost Classifier(Boosting technique)
    * Its a boosting technique. These techniques are sequential - processes are executed one after another. Dependent estimators.
 Boosting will attempts to correct the errors of previous model.
+
+## 6. Hyper parameter tuning
+   * A parameter being manually set by modeler is called hyper parameter. To obtain best model performance we need to tune hyper parameters.
+Model's default hyperparameters are not optimal for all problems. Tuned hyperparameters for the model to get an improved results. 
+
+## 7.Result Interpretation
+   * Compared the results after hyper parameter tuning and chose the best model based on high performance metric. Since it is classification problem, I am taking ROC(Receiver Optimistic Curve) and AUC(Area Under Curve) score as my performance metrics. The higher the AUC, the better the performance of the model at distinguishing between the positive and negative classes.
