@@ -2,8 +2,13 @@
 1. About Dataset
 2. Objective of this project
 3. Exploratory Data Analysis(EDA)
-   3a. Data Visualization
-   
+
+      * 3a.Data Visualization
+      * 3b.Preprocessing
+      * 3c.Imbalanced Dataset
+      * 3d.Correlation Heat Map
+      * 3e.Checked for outliers
+4. Model Selection
 
 
 
@@ -35,10 +40,10 @@
 ![i1.png](i1.png) ![i2.png](i2.png)  ![i3.png](i3.png) ![i4.png](i4.png)  
 
 ### Preprocessing
-   * There are no null values in this dataset.
-   * Encoded 18 categorical columns
-   * Standardized 3 columns(tenure, MonthlyCharges, TotalCharges)
-   * Checked for outliers
+      * There are no null values in this dataset.
+      * Encoded 18 categorical columns
+      * Standardized 3 columns(tenure, MonthlyCharges, TotalCharges)
+      * Checked for outliers
 
 ### It is an imbalanced Dataset
 ![imbalance.png](imbalance.png)
@@ -63,3 +68,18 @@
    * Churn is highly correlated(positive correlation)with tenure,InternetService_Fiber optic, Contract_Month-to-month, Contract_Two year, PaymentMethod_Electronic check.
 
    * Churn is strongly correlated with itself.
+
+### Checked for outliers
+![outliers.png](outliers.png)
+* Boxplot clearly shows that there are no outliers in the data.
+
+## 4. Model Selection
+   * I used PCA(Principal Component Analysis) Dimensionality reduction technique to give an efficient inputs to my models. I gave a brief explanation about the models I chose.
+### 4a. Logistic Regression
+   * Logistic regression is a statistical analysis method to predict a binary outcome, such as yes or no, based on prior observations of a data set.
+Since it predicts probability, the output values lies between 0 and 1(probability always lies between 0 to 1)
+
+   **Notable Hyperparameters are:**
+   
+         * C - Regularization parameter
+         * penalty - Type of regularization(l1, l2, elasticnet, none)
