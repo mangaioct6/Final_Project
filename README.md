@@ -10,7 +10,8 @@
       * 3e.Checked for outliers
 4. ETL
       * Stored the data in a database and used ETL to get it there. Created a data model. 
-      * ![datamodel.png](datamodel.png)
+       ![datamodel.PNG](datamodel.PNG)
+      * ETL code is in Final_ETL jupyter notebook
 5. Model Selection
       * 5a. Logistic Regression
       * 5b. Support Vector Machines
@@ -80,22 +81,22 @@
 ![outliers.png](outliers.png)
 * Boxplot clearly shows that there are no outliers in the data.
 
-## 4. Model Selection
+## 5. Model Selection
    * I used PCA(Principal Component Analysis) Dimensionality reduction technique to give an efficient inputs to my models. I gave a brief explanation about the models I chose.
-### 4a. Logistic Regression
+### 5a. Logistic Regression
    * Logistic regression is a statistical analysis method to predict a binary outcome, such as yes or no, based on prior observations of a data set.
 Since it predicts probability, the output values lies between 0 and 1(probability always lies between 0 to 1)
           
-### 4b. Support Vector Machines
+### 5b. Support Vector Machines
    * Main Objective of Support Vector Machine is find a hyperplane for an N Dimensional features that classify the data points. Hyper planes are decision boundaries that help classify the data points. Datas which on or near to the boundary (hyper plane) are called support vectors. Hence the name become Support Vector Machines. Hyper plane which contains maximum distance between support vectors is the best hyperplane we can select.
 
    * SVM has a special property it uses only the support vectors and the rest of the data points can be removed without affecting fitting the model. All Other classifiers uses all data points while fitting the model.
      
-### 4c. RandomForestClassifier(Bagging technique)
+### 5c. RandomForestClassifier(Bagging technique)
    * Random Forest is a bagging(bootstrap aggregating) technique. Base estimator is decision tree. RF combines various decision trees to produce more generalized model. We can reduce high variance using bagging. Independent estimators
 
    * Each tree will split based on different features.Since its a bagging technique, RF is a parallel process, meaning - doesn't wait for the previous process to be done.
      
-### 4d. XGBoost Classifier(Boosting technique)
+### 5d. XGBoost Classifier(Boosting technique)
    * Its a boosting technique. These techniques are sequential - processes are executed one after another. Dependent estimators.
 Boosting will attempts to correct the errors of previous model.
