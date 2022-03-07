@@ -22,7 +22,7 @@
 
 
 
-## About Dataset
+## 1.About Dataset
 * This is a Telco-Customer-Churn dataset, I took this csv file from kaggle. Each row represents a customer, each column contains customer’s attributes described on the column Metadata.
 
 * The data set includes information about:
@@ -35,26 +35,26 @@
 
     * Demographic info about customers – gender, age range, and if they have partners and dependents. Dataset contains 7043 rows and 21 columns.
 
-## Objective of this project
+## 2.Objective of this project
 
 * **My goal is to predict the number of customers leaving the phone service**. We need to understand better the situation, which customers are likely to leave and why. Once it is clear what features are impacting customer churn, then we can start create Machine Learning Models.
 
-## Exploratory Data Analysis(EDA)
-### Data Visualization
+## 3.Exploratory Data Analysis(EDA)
+### 3a.Data Visualization
 ![i1.png](i1.png) ![i2.png](i2.png)  ![i3.png](i3.png) ![i4.png](i4.png)  
 
-### Preprocessing
+### 3b.Preprocessing
       * There are no null values in this dataset.
       * Encoded 18 categorical columns
       * Standardized 3 columns(tenure, MonthlyCharges, TotalCharges)
       * Checked for outliers
 
-### It is an imbalanced Dataset
+### 3c.It is an imbalanced Dataset
 ![imbalance.png](imbalance.png)
 
 ![smote.png](smote.png)
 
-### Discussions from Correlation Heat Map
+### 3d.Discussions from Correlation Heat Map
 * The correlation goes from + 1 to - 1 where 1 is total positive linear correlation 0 is no linear correlation and negative 1 is total negative linear correlation.
 
 * From color bar,
@@ -73,7 +73,7 @@
 
    * Churn is strongly correlated with itself.
 
-### Checked for outliers
+### 3e.Checked for outliers
 ![outliers.png](outliers.png)
 * Boxplot clearly shows that there are no outliers in the data.
 
@@ -84,15 +84,15 @@
 Since it predicts probability, the output values lies between 0 and 1(probability always lies between 0 to 1)
           
 ### 4b. Support Vector Machines
-     * Main Objective of Support Vector Machine is find a hyperplane for an N Dimensional features that classify the data points. Hyper planes are decision boundaries that help classify the data points. Datas which on or near to the boundary (hyper plane) are called support vectors. Hence the name become Support Vector Machines. Hyper plane which contains maximum distance between support vectors is the best hyperplane we can select.
+   * Main Objective of Support Vector Machine is find a hyperplane for an N Dimensional features that classify the data points. Hyper planes are decision boundaries that help classify the data points. Datas which on or near to the boundary (hyper plane) are called support vectors. Hence the name become Support Vector Machines. Hyper plane which contains maximum distance between support vectors is the best hyperplane we can select.
 
-     * SVM has a special property it uses only the support vectors and the rest of the data points can be removed without affecting fitting the model. All Other classifiers uses all data points while fitting the model.
+   * SVM has a special property it uses only the support vectors and the rest of the data points can be removed without affecting fitting the model. All Other classifiers uses all data points while fitting the model.
      
 ### 4c. RandomForestClassifier(Bagging technique)
-     * Random Forest is a bagging(bootstrap aggregating) technique. Base estimator is decision tree. RF combines various decision trees to produce more generalized model. We can reduce high variance using bagging. Independent estimators
+   * Random Forest is a bagging(bootstrap aggregating) technique. Base estimator is decision tree. RF combines various decision trees to produce more generalized model. We can reduce high variance using bagging. Independent estimators
 
-     * Each tree will split based on different features.Since its a bagging technique, RF is a parallel process, meaning - doesn't wait for the previous process to be done.
+   * Each tree will split based on different features.Since its a bagging technique, RF is a parallel process, meaning - doesn't wait for the previous process to be done.
      
 ### 4d. XGBoost Classifier(Boosting technique)
-     * Its a boosting technique. These techniques are sequential - processes are executed one after another. Dependent estimators.
+   * Its a boosting technique. These techniques are sequential - processes are executed one after another. Dependent estimators.
 Boosting will attempts to correct the errors of previous model.
