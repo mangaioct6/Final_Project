@@ -8,11 +8,14 @@
       * 3c.Imbalanced Dataset
       * 3d.Correlation Heat Map
       * 3e.Checked for outliers
-4. Model Selection
-      * 4a. Logistic Regression
-      * 4b. Support Vector Machines
-      * 4c. RandomForestClassifier(Bagging technique)
-      * 4d. XGBoost Classifier(Boosting technique)
+4. ETL
+      * Stored the data in a database and used ETL to get it there. Created a data model. 
+      * ![datamodel.png](datamodel.png)
+5. Model Selection
+      * 5a. Logistic Regression
+      * 5b. Support Vector Machines
+      * 5c. RandomForestClassifier(Bagging technique)
+      * 5d. XGBoost Classifier(Boosting technique)
 
 
 
