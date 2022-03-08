@@ -105,6 +105,7 @@ Model's default hyperparameters are not optimal for all problems. Tuned hyperpar
 
 ## 7.Result Interpretation
    * Compared the results after hyper parameter tuning and chose the best model based on high performance metric. Since it is classification problem, I am taking ROC(Receiver Optimistic Curve) and AUC(Area Under Curve) score as my performance metrics. The higher the AUC, the better the performance of the model at distinguishing between the positive and negative classes.
+    ![resultcomparison.PNG](resultcomparison.PNG)
 ## 8. Is overfitted or Underfitted?
    * I have checked my training and testing accuracy of logistic regression model.My model is not over or under fitted. Because
 training and testing accuracies are same.
