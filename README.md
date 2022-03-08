@@ -35,7 +35,7 @@
 
 ## 2.Objective of this project
 
-* **My goal is to predict the number of customers leaving the phone service**. We need to understand better the situation, which customers are likely to leave and why. Once it is clear what features are impacting customer churn, then we can start create Machine Learning Models.
+* **My goal is to predict the number of customers leaving the phone service**. We need to understand better the situation, which customers are likely to leave and why. Once it is clear what features are impacting customer churn, then we can start create Machine Learning Models. Since it is churning customer(Yes) or not(No), **this problem comes under classification**
 
 ## 3.Exploratory Data Analysis(EDA)
 ### 3a.Data Visualization
@@ -107,6 +107,6 @@ Model's default hyperparameters are not optimal for all problems. Tuned hyperpar
    * Compared the results after hyper parameter tuning and chose the best model based on high performance metric. Since it is classification problem, I am taking ROC(Receiver Optimistic Curve) and AUC(Area Under Curve) score as my performance metrics. The higher the AUC, the better the performance of the model at distinguishing between the positive and negative classes.
 ## 8. Is overfitted or Underfitted?
    * I have checked my training and testing accuracy of logistic regression model.My model is not over or under fitted. Because
-training and testing accuracies are almost same.
+training and testing accuracies are same.
 ## 9.Conclusion
    * I have started by cleaning the telco customer churn data and analyzing it with visualization. Stored the data in a database and used ETL to get it there. Created a data model. Then, to be able to build a machine learning model,transformed the categorical data into numeric variables (feature engineering). After transforming the data, I tried 5 different machine learning algorithms using default parameters. And then, tuned the hyperparameters of those algorithms for model optimization, obtaining an AUC score of 86% from Logistic Regression Algorithm.
